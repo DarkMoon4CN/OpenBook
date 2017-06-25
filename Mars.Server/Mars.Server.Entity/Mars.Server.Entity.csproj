@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{397A6B62-A8B1-4F7A-A292-A403C918B27F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mars.Server.Entity</RootNamespace>
+    <AssemblyName>Mars.Server.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comments\CommentSearchEntity.cs" />
+    <Compile Include="Comments\EventItemCommentSearchEntity.cs" />
+    <Compile Include="Comments\ReplySearchEntity.cs" />
+    <Compile Include="Comments\SensitiveWordEntity.cs" />
+    <Compile Include="Comments\SensitiveWordSearchEntity.cs" />
+    <Compile Include="EventItemCommentEntity.cs" />
+    <Compile Include="EventItemLikeEntity.cs" />
+    <Compile Include="EventItemReplyEntity.cs" />
+    <Compile Include="Exhibition\ActivityEntity.cs" />
+    <Compile Include="AdminEntity.cs" />
+    <Compile Include="AdminSessionEntity.cs" />
+    <Compile Include="Exhibition\AdvertisementEntity.cs" />
+    <Compile Include="AppClientsEntity.cs" />
+    <Compile Include="AppUpdateEntity.cs" />
+    <Compile Include="CalendarTypeEntity.cs" />
+    <Compile Include="CategoriesEntity.cs" />
+    <Compile Include="CustomAttributeDefine.cs" />
+    <Compile Include="DataTableRSCacheEntity.cs" />
+    <Compile Include="DepartmentEntity.cs" />
+    <Compile Include="DialogMessagesEntity.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="EventItemEntity.cs" />
+    <Compile Include="EventItemGroupEntity.cs" />
+    <Compile Include="ExhibitionEmailEntity.cs" />
+    <Compile Include="Exhibition\ActivitySearchEntity.cs" />
+    <Compile Include="Exhibition\ActivityToCustomerEntity.cs" />
+    <Compile Include="Exhibition\ExhibitionEntity.cs" />
+    <Compile Include="Exhibition\ExhibitionSearchEntity.cs" />
+    <Compile Include="Exhibition\ExhibitorEntity.cs" />
+    <Compile Include="Exhibition\ExhibitorLocationEntity.cs" />
+    <Compile Include="Exhibition\ExhibitorSearchEntity.cs" />
+    <Compile Include="Exhibition\ExhibitorToCustomerEntity.cs" />
+    <Compile Include="Exhibition\ExhibitorToCustomerLocationEntity.cs" />
+    <Compile Include="Exhibition\SearchKeyWordEntity.cs" />
+    <Compile Include="FeedbackEntity.cs" />
+    <Compile Include="FestivalEntity.cs" />
+    <Compile Include="FunctionEntity.cs" />
+    <Compile Include="G.cs" />
+    <Compile Include="JsonMessageBase.cs" />
+    <Compile Include="JsonObj.cs" />
+    <Compile Include="KeyValuePairEntity.cs" />
+    <Compile Include="MobileMessageEntity.cs" />
+    <Compile Include="NewYear\CoupletEntity.cs" />
+    <Compile Include="NewYear\FuImageEntity.cs" />
+    <Compile Include="NewYear\ShareLogEntity.cs" />
+    <Compile Include="ReplyHeaderEntity.cs" />
+    <Compile Include="ReportEntity.cs" />
+    <Compile Include="ReviewCommonEntity.cs" />
+    <Compile Include="SignBookEntity.cs" />
+    <Compile Include="SMSEntity.cs" />
+    <Compile Include="SubscriptionEntity.cs" />
+    <Compile Include="Systems\StartPicEntity.cs" />
+    <Compile Include="Systems\StartPicSearchEntity.cs" />
+    <Compile Include="UserEventItemEntity.cs" />
+    <Compile Include="UserMailEntity.cs" />
+    <Compile Include="PictureEntity.cs" />
+    <Compile Include="PictureServerEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReminderEntity.cs" />
+    <Compile Include="SearchEntity.cs" />
+    <Compile Include="SysRoleEntity.cs" />
+    <Compile Include="UserEntity.cs" />
+    <Compile Include="UserRemindEntity.cs" />
+    <Compile Include="UserSessionEntity.cs" />
+    <Compile Include="Users\FeedbackSearchEntity.cs" />
+    <Compile Include="Users\ReportSearchEntity.cs" />
+    <Compile Include="WebKeys.cs" />
+    <Compile Include="ZoneEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,65 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+a{text-decoration:none;}
+i,em{list-style: none;}
+
+input,select{outline: none;-webkit-appearance: none;padding: 0;margin: 0;}
+/*去掉iPhone、iPad的默认按钮样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+
+textarea {-webkit-appearance: none;}
+/* For some Androids 苹果手机点击之后会出现黑色透明背景*/
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;  }
+
+/*=============11.12============*/
+/*去除Chrome等浏览器文本框默认发光边框*/
+input:focus, textarea:focus {
+    outline: none;
+}
+/*去掉高光样式*/
+input:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-modify:read-write-plaintext-only;
+}
+/*去除IE10+浏览器文本框后面的小叉叉*/
+input::-ms-clear {
+    display: none;
+}
+/*禁止多行文本框textarea拖拽*/
+textarea {
+    resize: none;
+    overflow: auto;
+}
+option {
+	padding: 0;
+	margin: 0;
+}
+

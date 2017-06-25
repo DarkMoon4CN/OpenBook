@@ -1,0 +1,332 @@
+﻿body {
+    background:url(../images/newyear/redBg.png);
+    width:100%;
+    padding-bottom:20px;
+    -webkit-user-select:none;
+}
+img{
+    width:100%;
+}
+input,button{
+    position:absolute;
+    outline:none;
+    background:none;
+    border:none;
+}
+@font-face {
+    font-family: 'chunlian';
+    src: url('../fonts/xingkai.gif');
+    src: url('../fonts/xingkai.gif?#iefix') format('embedded-opentype'),     
+         url('../fonts/xingkai.bmp') format('woff'),     
+         url('../fonts/xingkai.jpg') format('truetype'),     
+         url('../fonts/xingkai.png#jdxingkaifan') format('svg');  
+    }
+.cssword{font-family: 'chunlian';}
+
+.top{
+    width:100%;
+}
+.juanzhou{
+    margin:-10px auto 0;
+    width:98%;
+}
+.content-box,.share-box{
+    width:94%;
+    margin:-3px auto 10px;
+    background-color:#e3564e;
+    background-size:100% 100%;   
+}
+.menu-box{
+    padding:10px 0 0;
+    position:relative;
+}
+.menu{
+    width:50%;
+    margin:20px auto;
+    border:2px solid #ffd785;
+    border-radius:5px;
+    height:36px;
+    line-height:36px;
+}
+.menu li{
+    font-family:"华文行楷";
+    text-align:center;
+    width:50%;
+    color:#ffd785;
+    font-size:16px;
+    float:left;
+}
+.menu li.actived-menu{
+    color:#a80604;
+    background-color:#ffd785;
+}
+.choose-box{
+     position:relative;
+}
+.house{
+    background:url(../images/newyear/house.png) no-repeat;
+    width:90%;
+    margin:-10px auto 0;
+    height:319px; 
+    background-size:100% 100%;  
+}
+.couplet-box{
+    width:75%;
+    margin:auto;
+    position:relative;
+}
+.horizontal{
+    background:url(../images/newyear/horizontal-yellow.png) no-repeat;
+    height:46px;
+    width:50%;     
+    margin: auto;
+    top:46px;
+    left: 0;
+    right: 0;
+    line-height: 46px;
+    padding:0 !important;
+}
+.horizontal-red{
+    background:url(../images/newyear/horizontal-red.png) no-repeat;
+    height:46px;
+    width:110px;     
+    margin: auto;
+    top:46px;
+    left: 0;
+    right: 0;
+    line-height: 46px;
+    padding:0 !important;
+}
+.couplet{
+    text-align: center;
+    color:#a80604;
+    font-size:20px;
+    position: absolute;
+    background-size:100% 100%;
+    padding-bottom:10px;
+}
+.couplet .couplet-red .cssword{padding-bottom:10px;} 
+/*.cssword,*/
+.couplet-red{
+    text-align: center;
+    color:#ffd785;
+    font-size:20px;
+    position: absolute;
+    background-size:100% 100%;
+    padding-bottom:10px;
+}
+.left{
+    background:url(../images/newyear/right-yellow.png) no-repeat;
+    background-size:100% 100%;
+    padding:20px 0 35px;
+    width:38px;
+    position:absolute;
+    top:80px;
+    left:0px;
+}
+.left-red{
+    background:url(../images/newyear/right-red.png) no-repeat;
+    background-size:100% 100%;
+    padding:20px 0 35px;
+    width:38px;
+    position:absolute;
+    top:80px;
+    left:0px;
+    min-height:160px;
+}
+.right{
+    background:url(../images/newyear/left-yellow.png) no-repeat;
+    background-size:100% 100%;
+    padding:20px 0 35px;
+    width:38px;
+    top:80px;
+    right:0px;
+}
+.right-red{
+    background:url(../images/newyear/left-red.png) no-repeat;
+    background-size:100% 100%;
+    padding:20px 0 35px;
+    width:38px;
+    top:80px;
+    right:0px;
+    min-height:160px;
+}
+.happniess-img{
+    width:30%;
+    margin:auto;
+    position:absolute;
+    top:120px;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.arrow{
+    width:30px;
+    height:43.2px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    display:block;
+    color:#ffd785;
+    font-family:"Microsoft YaHei";
+}
+.arrow_l .arrow{
+     background:url(../images/newyear/pre.png) no-repeat center;
+     background-size:100%;
+}
+.arrow_r .arrow{
+     background:url(../images/newyear/next.png) no-repeat center;
+     background-size:100%;
+}
+.arrow_l{
+    width:10%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:10px;
+    text-align:center;
+}
+.arrow_r{
+    width:10%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:10px;
+}
+.left-arrow{
+    background:url(../images/newyear/left-arrow.png) no-repeat;
+    background-size:100% 100%;
+    top:50%;
+    left:10px;
+}
+.right-arrow{
+    background:url(../images/newyear/right-arrow.png) no-repeat;
+    background-size:100% 100%;
+    top:50%;
+    right:10px;
+}
+.happiness-box{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    position:relative;   
+}
+.happiness-img_box{ 
+    text-align:center;
+   }
+.happiness-img_box li img{
+    width:18%;
+    margin:auto;
+    padding:30px 0 0;
+}
+.small-arrow{
+    width:16.8px;
+    height:32.4px;
+}
+.share-btn a{
+    font-size:16px;
+    display:block;
+    width:50%;
+    height:40px;
+    border-radius:18px;
+    line-height:40px;
+    background-color:#ffd785;
+    margin:30px auto;
+    text-align:center;
+    font-family:"华文行楷";
+}
+.share{
+    color:#a80604;  
+    line-height:30px;
+}
+.instruction{
+    color:#ffd785;
+   background:url(../images/newyear/border-img.png) no-repeat;
+    background-size:100% 100%;
+    width:90%;
+    margin:0 auto 40px;
+
+}
+.instruction-text{
+    padding:14px; 
+}
+.instruction-text p{word-wrap:normal;
+    line-height:24px;
+    font-family:"Microsoft YaHei";
+    font-size:14px;
+}
+.copy{
+    background:url(../images/newyear/white.png) no-repeat;
+    width:100%;
+    height:80px;
+    background-size:100% 100%;
+    font-family:"Microsoft YaHei";
+    color:white;
+    text-align:center; 
+    font-size:14px;
+}
+.copy a{
+    color:#ffd785;
+   border-bottom:1px solid #ffd785;
+}
+.write-couplet{
+    width:75%;
+    margin:25px auto 0;
+    color:#ffd785;
+    font-family:"Microsoft YaHei";  
+}
+.write-couplet p{
+    height:40px;
+}
+.write-couplet p input{
+    color:#ffd785;
+    font-family:"Microsoft YaHei"; 
+    border-bottom:1px solid #ffd785;
+    width:56%;
+    margin-left:10px;
+    padding-bottom:2px;
+    font-size: 16px;
+    margin-top: -7px;
+}
+.write-couplet p input::-webkit-input-placeholder{
+    color:#f2a16e;
+}
+.tab .box{
+    display:none;
+}
+.preview{
+   position:relative;
+}
+
+.show{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+    z-index:1;
+}
+.share-lead{
+    position:fixed;
+    z-index:1;
+    display:none;
+}
+.btns a{
+    display:none;
+}
+a:active{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.enough{
+    color:#ffd785;
+    padding-top:25px;
+    text-align:center;
+}
+.write_text{
+    font-family:"楷体";
+}
+.left>div,.right>div{
+    padding-bottom:10px;
+}

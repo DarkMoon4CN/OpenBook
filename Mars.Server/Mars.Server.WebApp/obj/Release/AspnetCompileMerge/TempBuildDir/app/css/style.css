@@ -1,0 +1,278 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style:none;
+}a{
+	text-decoration:none;
+	color:#999;
+}
+a:hover {
+    outline: none;
+	}
+a:active{
+    outline:none;
+	}
+ ul li a{
+ 	font-size: 14px;
+ 	}
+/* set image max width to 100% */
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+.fl{
+	float:left;
+	}
+.fr{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix { display:inline-block;}
+body{
+	position:relative;
+	background-color:#fff;
+	font-size:0.875rem;
+	_font-size:14px;
+	font-size:18px\9;
+	font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+/*reset-end*/
+/*header-start*/
+.header{
+	width:100%;
+	position:relative;
+	top:0;
+	background-color:white;
+}
+.logo-box_img{
+	margin-bottom:.5em;
+}
+.main-box{
+	margin:-34px auto 0 !important;
+}
+.content{
+	max-width:964px;
+	height:100%;
+	margin:0 auto;
+	_margin:0 auto;
+	_width:964px;
+}
+.footer-menu{
+	color:#999 !important;
+	text-align:center;
+	margin:4.8em auto 0 !important;
+	line-height:1.8em;
+	font-family: "微软雅黑";
+}
+@media only screen and (min-width:100px) and (max-width:440px) {
+	.none{
+		display:none;
+	}
+	.content{
+		padding:0 27px;
+	}
+}
+/*download-Page  start*/
+/*header-start*/
+.header-box{
+	width:100%;
+	height:118px;
+}
+.header-logo,.main-left{
+	_margin-left:40px;
+}
+.footer-menu p{
+	_margin-left:60px;
+}
+.content{
+	max-width:1000px;
+	_width:1000px;
+	margin:auto;
+	padding:0 5px;
+}
+.font14{
+	font-size:1.2rem;
+}
+.header-advice{
+	padding-top:35px;
+	padding-top:70px;
+	_margin-right:40px;
+	display:inline-table;
+	color:white;
+}
+/*main-start*/
+.main{
+	_width: 1000px;
+	margin-top:60px;
+	_margin:auto;
+	color:#fff;	
+	_position:relative;
+}
+
+.main-left{
+	width:60%;
+}
+.download-img{
+	/*width:81.1667%;*/
+	}
+.download-btn{
+	width:43.38%;
+}
+.download-QR-Code{
+	width:30.11%;
+	margin-left:40px;
+}
+.app-download{
+	font-size:4.8rem;
+	padding:72px 0 50px;
+	color:#fff;
+}
+.book-app{
+	color:#daf2ff;
+	font-size:3rem;
+	}
+.download-img{
+	margin:100px 0 0;
+}
+
+.for-andriod{
+	margin:14px 0 0;
+}
+.footer-nav{
+	line-height:24px;
+	text-align:center;
+	_padding:130px 0 0;
+}
+.footer-nav p,.footer-nav p a{
+	color:#fff;
+}
+.mobile{
+	width:33%;
+}
+.mobile-img{
+	/**+margin-top:-430px;*/
+	_float:none;
+	_position:absolute;
+	_right:0;
+	_top:20px;
+}
+@media only screen and (min-width: 450px) and (max-width:840px) {
+	.app-download{
+	font-size:3rem;
+	padding:32px 0 20px;
+	}
+	.book-app{
+		font-size:1.5rem;
+	}
+	.download-img{
+		margin-top:50px;
+	}
+	.main{
+		margin:30px 0 0;
+	}
+}
+@media only screen and (min-width:100px) and (max-width:449px) {
+	.app-download{
+	font-size:2rem;
+	padding:22px 0 10px;
+	}
+	.book-app{
+		font-size:1rem;
+	}
+	.download-img{
+		margin-top:20px;
+	}
+	.main{
+		margin:10px 0 0;
+	}
+	.for-andriod{
+	margin:4px 0 0;
+}
+}
+@media only screen and (max-width:460px ) {
+	.footer-menu p b{
+		margin:0;
+	}
+}
+/*invitationPage*/
+.wrap{
+	background:#950b0b url(../img/bg.gif) no-repeat;
+	max-width:750px;
+	height:767px;
+	margin:auto;
+	background-size:100%;
+}
+.invitation-header{
+	text-align:center;
+}
+.invitation-header-img{
+	width:14em;
+	margin:auto;
+}
+.invitation-header-img img{
+	margin:1em auto;
+}
+.invitation-header-title{
+	font-size:1.4em;
+}
+/*main*/
+.invitation-main{
+	width:86%;
+	margin:1.4em auto 0;
+	border-bottom:.1em dashed #efc38c;
+	padding-bottom:.5em;
+	color:#fff;
+}
+.invitation-main-title{
+	font-size:1.2em;
+	padding-bottom:1em;
+	border-bottom:.1em dashed #efc38c;
+}
+.infor{
+	color:#FFEBA9;
+}
+.invitation-content{
+	margin-top:1.2em;
+	
+}
+.invitation-content p{
+	text-indent:2em;
+	line-height:1.6em;
+}
+.invite{
+	text-align:right;
+}
+.invite-company{
+	margin:.5em 0 0;
+}
+.footer-con{
+	text-align: center;
+	color:#fff;
+}
+.app_ewm{
+	width:12em;
+	margin:1em auto 0;
+}
+@media only screen and (width:320px ) {
+	.app_ewm{
+		width:6em;
+		margin:.5em auto 0;
+	}
+	.invitation-header-img{
+	width:10em;
+}
+.invitation-main-title {
+	padding-bottom:.5em;
+}
+.invitation-content {
+    margin-top:.7em;}
+ .invite-company {
+    margin:0 0;}
+}

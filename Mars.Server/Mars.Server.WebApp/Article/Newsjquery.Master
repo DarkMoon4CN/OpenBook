@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Newsjquery.Master.cs" Inherits="Mars.Server.WebApp.Article.Newsjquery" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>开卷日历新闻</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="OpenBook,开卷日历——网罗书业人和事！">
+    <meta name="application-name" content="开卷日历">
+    <meta name="author" content="开卷日历">
+    <meta name="apple-mobile-web-app-title" content="开卷日历">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/images/logo/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/logo/114px.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/logo/72px.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/logo/57px.png">
+    <link rel="msapplication-TitleImage" content="/images/logo/57px.png">
+    <OpenBook:OBScript runat="server" ID="common_css" Src="~/css/common.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="news_css" Src="~/css/news.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="shareapp_css" Src="~/css/share-common.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="sharecom_css" Src="~/css/share-app.css" ScriptType="StyleCss" />
+
+    <OpenBook:OBScript runat="server" ID="jqueryjs" Src="~/js/plugin/jquery-1.11.3.min.js" ScriptType="Javascript" />
+    <script type="text/javascript"> var _root = '<%= Mars.Server.Utils.WebMaster.WebRoot %>'; </script>
+    <OpenBook:OBScript runat="server" ID="common_js" Src="~/js/common.js" ScriptType="Javascript" />
+    <OpenBook:OBScript runat="server" ID="smartcore_js" Src="~/js/smartcore.js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery.pagination.js" runat="server" ID="pagination_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery-jtemplates.js" runat="server" ID="jtemplates_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/scrollpagination.js" runat="server" ID="scrollpagination_js" ScriptType="Javascript" />
+    
+    
+    <asp:ContentPlaceHolder ID="css" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+        </header>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+        </footer>
+    </div>
+
+    <asp:ContentPlaceHolder ID="inlinescripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

@@ -1,0 +1,4 @@
+E:\Project\Mars\Code\Log4Simple\bin\Release\Log4Simple.dll
+E:\Project\Mars\Code\Log4Simple\bin\Release\Log4Simple.pdb
+E:\Project\Mars\Code\Log4Simple\obj\Release\Log4Simple.dll
+E:\Project\Mars\Code\Log4Simple\obj\Release\Log4Simple.pdb

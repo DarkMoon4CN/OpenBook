@@ -1,0 +1,33 @@
+*{margin:0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style:none;}
+a{text-decoration:none;color:#fff;}
+a:hover {outline: none;}
+a:active{outline:none;}
+ ul li a{font-size: 14px;}
+/* set image max width to 100% */
+img {width: 100%;height: auto; /* ie8 */}
+body{background:white url(../img/bg.png) no-repeat;box-sizing:border-box;font-size:1.2rem;font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif}
+.wrap{width:80%;margin:10% auto 0;position:relative;}
+.openBookLeft{float:left;width:30.88%;height:63.2rem;position:relative;}
+.iphoneBox{width:79%;}
+.openBookPic{width:71%;position:absolute;z-index:1;top:9%;left:4.03%;}
+.openBookPic li {width:100%;}
+.openBookRight{width:65.332%;float:right;}
+.download{position:relative;}
+.downloadBtn{margin:7rem auto 6rem;width:70%;*margin:50px auto;margin:70px auto\9;}
+.downloadBtn a{width:45%;display:inline-block;}
+.Ios{float:left;}
+.downloadBtn a input{width:100%;}
+.android{float:right;}
+.code{width:15%;float:right;}
+.footer{text-align:center;line-height:150%;font-size:1.4rem;*font-size:14px;padding-bottom:2rem;}
+.footer p{color:#999;}
+@media only screen and (min-width:265px) and (max-width:800px) {
+	body{background:url(../img/bg_.png) no-repeat;}
+	.wrap{margin-top:13%;width:87%;}
+	.openBookLeft{display:none;}
+	.openBookRight{float:none;width:100%;}
+	.downloadBtn{width:100%;margin:4rem 0;}
+	.downloadBtn a{width:48%;}
+	.code{width:7.4rem;margin:1rem 0;}
+	.footer{font-size:1rem;}
+}

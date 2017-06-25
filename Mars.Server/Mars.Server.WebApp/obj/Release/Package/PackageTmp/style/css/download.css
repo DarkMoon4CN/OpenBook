@@ -1,0 +1,123 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.clear{
+	clear:both;
+	}
+.h1{
+	font-size:55px;
+	font-weight:bold;
+	color:#FFF;
+	}
+.h2{
+	font-size:24px;
+	color:#FFF;
+	margin-top:50px;}
+.main{
+	background-color:#199bde;
+	width:100%;
+	height:900;
+	}
+	
+.top{
+	height:120px;
+
+	
+	border-bottom:1px #1f7dad solid;
+	}
+.top-main{
+		width:1000px;
+		margin:0 auto;
+	}
+.lf{
+	float:left;
+	margin-top:10px;
+	}
+.rt{
+	float:right;
+	margin-top:80px;
+	}
+.rt a{
+	color:#FFF;
+	font-family:"微软雅黑";
+	}
+.con{
+
+    max-width: 1000px;
+	margin:0 auto;}
+	
+.con_lf{
+	padding-top:150px;
+	float:left;
+	}
+.box{
+	background-color:#ccc;
+	margin-top:65px;
+	width:610px;
+
+	}
+.box1{
+	float:left;
+	
+	max-width:304px;
+	}
+.box1 a{
+	display:block;
+	margin-top:40px;
+	
+	}
+.box1 a:hover{
+	background-image:url(../images/app_but_and_hov.png);
+	}
+.box ul{
+	list-style:none;
+	}
+.box li{
+
+	margin:30px 0;
+	}
+.box li a{
+	
+	display:block;
+	}
+//.ios{
+	background:url(../images/app_but_ios.png);
+	}
+//.ios a:hover{
+	
+	}
+//.and{
+	background:url(../images/app_but_and.png);
+	}
+//.box li a:hover{
+	background-color:fff;
+	//background:url(../images/app_but_and_hov.png);
+	}
+.box2{
+	float:right;
+	width:304px;
+	margin-top:0px;
+	}
+.con_right{
+	float:right;
+	margin-top:30px;
+	}
+.2box{
+	margin-top:50px;
+	float:left;
+	color:#FFF;
+	font-size:14px;
+	}
+	
+	
+.foot{
+	width:1000px;
+	height:100px;
+	margin-top:-100px;
+	position:relative;
+display:inline;
+	float:left;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	}

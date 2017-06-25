@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB2DA786-EF4D-45F7-B8D7-E97B3B7BE636}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Log4Simple</RootNamespace>
+    <AssemblyName>Log4Simple</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET;NET_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Log2Simple.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>TRACE;NET;NET_2_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Log2Simple.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appender\AppenderSkeleton.cs" />
+    <Compile Include="Appender\BufferingAppender2LocalFile.cs" />
+    <Compile Include="Appender\BufferingAppenderSkeleton.cs" />
+    <Compile Include="Appender\CountingQuietTextWriter.cs" />
+    <Compile Include="Appender\FileAppender.cs" />
+    <Compile Include="Appender\IAppender.cs" />
+    <Compile Include="Appender\IBulkAppender.cs" />
+    <Compile Include="Appender\RemoteAppender\RemoteAppenderDB.cs" />
+    <Compile Include="Appender\RemoteAppender\RemoteAppenderSkeleton.cs" />
+    <Compile Include="Appender\RemotingAppender.cs" />
+    <Compile Include="Appender\RollingFileAppender.cs" />
+    <Compile Include="Appender\TextWriterAppender.cs" />
+    <Compile Include="Core\CountEvaluator.cs" />
+    <Compile Include="Core\ErrorCode.cs" />
+    <Compile Include="Core\IErrorHandler.cs" />
+    <Compile Include="Core\ILogWrapper.cs" />
+    <Compile Include="Core\IOptionHandler.cs" />
+    <Compile Include="Config\ConfiguratorAttribute.cs" />
+    <Compile Include="Config\XmlConfigurator.cs" />
+    <Compile Include="Config\XmlConfiguratorAttribute.cs" />
+    <Compile Include="Core\DefaultRepositorySelector.cs" />
+    <Compile Include="Core\IAppenderAttachable.cs" />
+    <Compile Include="Core\IFormat.cs" />
+    <Compile Include="Core\ITriggeringEventEvaluator.cs" />
+    <Compile Include="Core\LocationInfo.cs" />
+    <Compile Include="Core\LogException.cs" />
+    <Compile Include="Core\MethodItem.cs" />
+    <Compile Include="Core\SecurityContext.cs" />
+    <Compile Include="Core\SecurityContextProvider.cs" />
+    <Compile Include="Core\StackFrameItem.cs" />
+    <Compile Include="Layout\PatternLayout.cs" />
+    <Compile Include="Layout\ILayout.cs" />
+    <Compile Include="Layout\IRawLayout.cs" />
+    <Compile Include="Core\IRepositorySelector.cs" />
+    <Compile Include="Core\LoggerManager.cs" />
+    <Compile Include="Core\WrapperMap.cs" />
+    <Compile Include="Layout\Layout2RawLayoutAdapter.cs" />
+    <Compile Include="Layout\LayoutSkeleton.cs" />
+    <Compile Include="Layout\Pattern\ApplicationNoConverter.cs" />
+    <Compile Include="Layout\Pattern\ExIntOnePatternConverter.cs" />
+    <Compile Include="Layout\Pattern\MoudleNamePatternConverter.cs" />
+    <Compile Include="Layout\Pattern\TimeStampPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\LevelPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\LiteralPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\LoggerPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\MessagePatternConverter.cs" />
+    <Compile Include="Layout\Pattern\NewLinePatternConverter.cs" />
+    <Compile Include="Layout\Pattern\PatternConverter.cs" />
+    <Compile Include="Layout\Pattern\PatternLayoutConverter.cs" />
+    <Compile Include="Layout\Pattern\ThreadPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\ExIntTwoPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\ExIntFourPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\ExStringOnePatternConverter.cs" />
+    <Compile Include="Layout\Pattern\ExStringFourPatternConverter.cs" />
+    <Compile Include="Layout\Pattern\UniquePatternConverter.cs" />
+    <Compile Include="Layout\RawLayoutConverter.cs" />
+    <Compile Include="Layout\RawTimeStampLayout.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="Plugin\BufferingLocalFilePlugin.cs" />
+    <Compile Include="Plugin\IPlugin.cs" />
+    <Compile Include="Plugin\IPluginFactory.cs" />
+    <Compile Include="Plugin\PluginCollection.cs" />
+    <Compile Include="Plugin\PluginMap.cs" />
+    <Compile Include="Plugin\PluginSkeleton.cs" />
+    <Compile Include="Plugin\RemoteLoggingServerPlugin.cs" />
+    <Compile Include="Repository\Hierarchy\DefaultLoggerFactory.cs" />
+    <Compile Include="Repository\Hierarchy\Hierarchy.cs" />
+    <Compile Include="Repository\Hierarchy\ILoggerFactory.cs" />
+    <Compile Include="Repository\Hierarchy\Logger.cs" />
+    <Compile Include="Repository\Hierarchy\XmlHierarchyConfigurator.cs" />
+    <Compile Include="Repository\ILoggerRepository.cs" />
+    <Compile Include="ILog.cs" />
+    <Compile Include="Core\ILogger.cs" />
+    <Compile Include="Core\ILoggerWrapper.cs" />
+    <Compile Include="Core\LoggerWrapperImp.cs" />
+    <Compile Include="Core\LoggingData.cs" />
+    <Compile Include="Core\LogImp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IXmlRepositoryConfigurator.cs" />
+    <Compile Include="Repository\LoggerRepositorySkeleton.cs" />
+    <Compile Include="Util\AppenderAttachedImpl.cs" />
+    <Compile Include="Util\CyclicBuffer.cs" />
+    <Compile Include="Util\FileSerializerByBase64.cs" />
+    <Compile Include="Util\LogLog.cs" />
+    <Compile Include="Util\NullSecurityContext.cs" />
+    <Compile Include="Util\OnlyOnceErrorHandler.cs" />
+    <Compile Include="Util\OptionConverter.cs" />
+    <Compile Include="Util\PatternParsercs.cs" />
+    <Compile Include="Util\QuietTextWriter.cs" />
+    <Compile Include="Util\ReaderWriterLock.cs" />
+    <Compile Include="Util\SystemInfo.cs" />
+    <Compile Include="Util\TextWriterAdapter.cs" />
+    <Compile Include="Util\TypeConverters\ConversionNotSupportedException.cs" />
+    <Compile Include="Util\TypeConverters\ConverterRegistry.cs" />
+    <Compile Include="Util\TypeConverters\IConvertFrom.cs" />
+    <Compile Include="Util\TypeConverters\TypeConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layout\Pattern\ExIntThreePatternConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layout\Pattern\ExStringTwoPatternConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layout\Pattern\ExStringThreePatternConverter.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

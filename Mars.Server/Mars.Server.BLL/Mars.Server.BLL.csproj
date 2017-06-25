@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A6434A2-93C3-441E-A0F7-C17C16F8D2BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mars.Server.BLL</RootNamespace>
+    <AssemblyName>Mars.Server.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCPRestSDK">
+      <HintPath>..\..\..\DLLs\CCPRestSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Qiniu.4.0, Version=6.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\Qiniu.4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BCtrl_Article.cs" />
+    <Compile Include="BCtrl_Auth.cs" />
+    <Compile Include="BCtrl_CalendarType.cs" />
+    <Compile Include="BCtrl_Categories.cs" />
+    <Compile Include="BCtrl_Common.cs" />
+    <Compile Include="BCtrl_Department.cs" />
+    <Compile Include="BCtrl_DialogMessages.cs" />
+    <Compile Include="BCtrl_EventItem.cs" />
+    <Compile Include="BCtrl_EventItemBrowseCnt.cs" />
+    <Compile Include="BCtrl_EventItemGroup.cs" />
+    <Compile Include="BCtrl_ExhibitionEmail.cs" />
+    <Compile Include="BCtrl_Festival.cs" />
+    <Compile Include="BCtrl_Function.cs" />
+    <Compile Include="BCtrl_MobileMessage.cs" />
+    <Compile Include="BCtrl_PictureServer.cs" />
+    <Compile Include="BCtrl_SignBook.cs" />
+    <Compile Include="BCtrl_SignSMSModel.cs" />
+    <Compile Include="BCtrl_SMS.cs" />
+    <Compile Include="BCtrl_Subscription.cs" />
+    <Compile Include="BCtrl_SysRole.cs" />
+    <Compile Include="BCtrl_SysUser.cs" />
+    <Compile Include="BCtrl_Test.cs" />
+    <Compile Include="BCtrl_UserMail.cs" />
+    <Compile Include="BCtrl_Users.cs" />
+    <Compile Include="BCtrl_Zone.cs" />
+    <Compile Include="BCtrl_UserRemind.cs" />
+    <Compile Include="Comments\BCtrl_Comment.cs" />
+    <Compile Include="Comments\BCtrl_CommentSearch.cs" />
+    <Compile Include="Comments\BCtrl_EventItemCommentSearch.cs" />
+    <Compile Include="Comments\BCtrl_ReplySearch.cs" />
+    <Compile Include="Comments\BCtrl_SensitiveWordSearch.cs" />
+    <Compile Include="Exhibition\BCtrl_Activity.cs" />
+    <Compile Include="Exhibition\BCtrl_Console_Activity.cs" />
+    <Compile Include="Exhibition\BCtrl_Exhibition.cs" />
+    <Compile Include="Exhibition\BCtrl_Exhibitor.cs" />
+    <Compile Include="Exhibition\BCtrl_Search.cs" />
+    <Compile Include="MailManager.cs" />
+    <Compile Include="NewYear\BCtrl_Couplet.cs" />
+    <Compile Include="Systems\BCtrl_StartPicSearch.cs" />
+    <Compile Include="Systems\BCtrl_WordCheck.cs" />
+    <Compile Include="UploadImageHelper.cs" />
+    <Compile Include="SmsMananger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\BCtrl_FeedbackSearch.cs" />
+    <Compile Include="Users\BCtrl_Recommend.cs" />
+    <Compile Include="Users\BCtrl_ReportSearch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mars.Server.DAO\Mars.Server.DAO.csproj">
+      <Project>{baf43aaa-6a84-4bce-93bf-d7afda2ec8f8}</Project>
+      <Name>Mars.Server.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Entity\Mars.Server.Entity.csproj">
+      <Project>{397a6b62-a8b1-4f7a-a292-a403c918b27f}</Project>
+      <Name>Mars.Server.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Utils\Mars.Server.Utils.csproj">
+      <Project>{03e6b776-ea5e-4f0a-b8c1-ce2d63873819}</Project>
+      <Name>Mars.Server.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

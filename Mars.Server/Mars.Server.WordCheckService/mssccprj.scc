@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Mars.Server.WordCheckService.csproj]
+SCC_Aux_Path = "\\192.168.10.15\vss"
+SCC_Project_Name = "$/Mars/Code/Mars.Server/Mars.Server.WordCheckService", COOAAAAA

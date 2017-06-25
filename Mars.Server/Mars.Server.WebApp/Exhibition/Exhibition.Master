@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Exhibition.master.cs" Inherits="Mars.Server.WebApp.Exhibition.Exhibition" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="图书，订货会，展商，活动，日程"/>
+    <meta name="description" content="由中国出版协会和中国书刊发行业协会主管主办的2016北京图书订货会，将于2016年1月7日至9日..."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>开卷展场地图</title>
+
+    <OpenBook:OBScript runat="server" ID="common_css" Src="~/css/common.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="exhibition_common_css" Src="~/css/exhibition-common.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="exhibition_style_css" Src="~/css/exhibition-style.css" ScriptType="StyleCss" />
+    <asp:ContentPlaceHolder ID="css" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <OpenBook:OBScript runat="server" ID="jqueryjs" Src="~/js/plugin/jquery-1.11.3.min.js" ScriptType="Javascript" />
+    <script type="text/javascript">window.jQuery || document.write("<script src='js/plugin/jquery-1.11.3.min.js'>\x3C/script>");</script>
+    <script type="text/javascript"> var _root = '<%= Mars.Server.Utils.WebMaster.WebRoot %>'; </script>
+    <OpenBook:OBScript runat="server" ID="common_js" Src="~/js/common.js" ScriptType="Javascript" />
+    <OpenBook:OBScript runat="server" ID="exhibition_common_js" Src="~/js/exhibitioncommon.js" ScriptType="Javascript" />
+
+    <!-- smart scripts -->
+    <OpenBook:OBScript runat="server" ID="smartcore_js" Src="~/js/smartcore.js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery.pagination.js" runat="server" ID="pagination_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery-jtemplates.js" runat="server" ID="jtemplates_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/scrollpagination.js" runat="server" ID="scrollpagination_js" ScriptType="Javascript" />
+    <!-- smart scripts -->
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="content" runat="server">    
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="inlinescripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

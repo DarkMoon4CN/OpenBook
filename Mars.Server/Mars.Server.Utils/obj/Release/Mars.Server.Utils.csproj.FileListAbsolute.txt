@@ -1,0 +1,17 @@
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Mars.Server.Utils.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Mars.Server.Utils.pdb
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Newtonsoft.Json.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Newtonsoft.Json.xml
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\obj\Release\Mars.Server.Utils.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\obj\Release\Mars.Server.Utils.pdb
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\obj\Release\Mars.Server.Utils.csprojResolveAssemblyReference.cache
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\CsvHelper.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\EPPlus.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\NPOI.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\NPOI.OOXML.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\NPOI.OpenXml4Net.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\NPOI.OpenXmlFormats.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\NPOI.xml
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Log4Simple.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Utils\bin\Release\Log4Simple.pdb

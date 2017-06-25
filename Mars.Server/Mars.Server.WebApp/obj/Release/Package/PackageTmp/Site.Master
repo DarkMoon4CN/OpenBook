@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Mars.Server.WebApp.Site" %>
+<%@ Register Src="UCControl/UC_Header.ascx" TagName="UC_Header" TagPrefix="OpenBook" %>
+<%@ Register Src="UCControl/UC_LeftMenu.ascx" TagName="UC_LeftMenu" TagPrefix="OpenBook" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>信息发布平台-<%=title %></title>
+    <!-- basic styles -->
+    <OpenBook:OBScript runat="server" ID="bootstrap" Src="~/css/bootstrap.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="bootstrap_responsive" Src="~/css/bootstrap-responsive.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="font_awesome" Src="~/css/font-awesome.min.css" ScriptType="StyleCss" />
+    <!--[if IE 7]>
+    <OpenBook:OBScript runat="server" ID="font_awesome_ie7" Src="~/css/font-awesome-ie7.min.css" ScriptType="StyleCss"/>
+    <![endif]-->
+    <OpenBook:OBScript runat="server" ID="common" Src="~/css/common.css" ScriptType="StyleCss" />
+    <!-- basic styles -->
+
+    <!-- ace styles -->
+    <OpenBook:OBScript runat="server" ID="ace" Src="~/css/ace.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="ace_responsive" Src="~/css/ace-responsive.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="ace_skins" Src="~/css/ace-skins.min.css" ScriptType="StyleCss" />
+    <!--[if lt IE 9]>
+    <OpenBook:OBScript runat="server" ID="ace_ie" Src="~/css/ace-ie.min.css" ScriptType="StyleCss"/>
+	<![endif]-->
+    <!-- ace styles -->
+
+    <!-- page specific plugin styles -->
+    <asp:ContentPlaceHolder ID="css" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- page specific plugin styles -->
+
+    <!-- basic javascript -->
+    <OpenBook:OBScript runat="server" ID="jqueryjs" Src="~/js/plugin/jquery.min.js" ScriptType="Javascript" />
+    <script type="text/javascript">window.jQuery || document.write("<script src='js/plugin/jquery-1.9.1.min.js'>\x3C/script>");</script>
+    <OpenBook:OBScript runat="server" ID="bootstrapjs" Src="~/js/plugin/bootstrap.min.js" ScriptType="Javascript" />
+    <script type="text/javascript"> var _root = '<%= Mars.Server.Utils.WebMaster.WebRoot %>'; </script>
+    <OpenBook:OBScript runat="server" ID="common_js" Src="~/js/common.js" ScriptType="Javascript" />
+    <!-- basic javascript -->
+
+    <!-- ace scripts -->
+    <OpenBook:OBScript runat="server" ID="ace_elements_js" Src="~/js/plugin/ace-elements.min.js" ScriptType="Javascript" />
+    <OpenBook:OBScript runat="server" ID="ace_js" Src="~/js/plugin/ace.min.js" ScriptType="Javascript" />
+    <!-- ace scripts -->
+
+    <!-- smart scripts -->
+    <OpenBook:OBScript runat="server" ID="smartcore_js" Src="~/js/smartcore.js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery.pagination.js" runat="server" ID="pagination_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery-jtemplates.js" runat="server" ID="jtemplates_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/scrollpagination.js" runat="server" ID="scrollpagination_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/sessionPolling.js" runat="server" ID="sessionPolling_js" ScriptType="Javascript" />
+    <!-- smart scripts -->
+    <!-- page specific javascript -->
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- page specific javascript -->
+</head>
+<body>
+    <!--header-->
+    <OpenBook:UC_Header ID="ucHeader" runat="server" />
+    <!--header-->
+
+    <!--content-->
+    <div class="container-fluid" id="main-container">
+        <a href="javascript:" id="menu-toggler"><span></span></a>
+        <!-- menu toggler -->
+        <div id="sidebar">
+            <div id="sidebar-shortcuts">
+                <div id="sidebar-shortcuts-large">
+                    <button class="btn btn-small btn-success"><i class="icon-signal"></i></button>
+                    <button class="btn btn-small btn-info"><i class="icon-pencil"></i></button>
+                    <button class="btn btn-small btn-warning"><i class="icon-group"></i></button>
+                    <button class="btn btn-small btn-danger"><i class="icon-cogs"></i></button>
+                </div>
+                <div id="sidebar-shortcuts-mini">
+                    <span class="btn btn-success"></span>
+                    <span class="btn btn-info"></span>
+                    <span class="btn btn-warning"></span>
+                    <span class="btn btn-danger"></span>
+                </div>
+            </div>
+            <!-- #sidebar-shortcuts -->
+
+            <!--menu-->
+            <OpenBook:UC_LeftMenu ID="ucLeftMenu" runat="server" />
+            <!--menu-->
+
+            <div id="sidebar-collapse"><i class="icon-double-angle-left"></i></div>
+        </div>
+        <!--/#sidebar-->
+
+        <div id="main-content" class="clearfix">
+            <!-- navigation -->
+            <div id="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li><i class="icon-home"></i><a href="<%=VirtualPathUtility.ToAbsolute("~/Default.aspx") %>">Home</a><span class="divider"><i class="icon-angle-right"></i></span></li>
+                    <asp:ContentPlaceHolder ID="navigation" runat="server">
+                    </asp:ContentPlaceHolder>
+                </ul>
+            </div>
+            <!-- navigation -->
+
+            <div id="page-content" class="clearfix">
+                <!-- page-header -->
+                <div class="page-header position-relative">
+                    <asp:ContentPlaceHolder ID="pageheader" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- page-header -->
+
+                <!-- page-content -->
+                <div class="row-fluid">
+                    <asp:ContentPlaceHolder ID="content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- page-content -->
+            </div>
+
+            <div id="ace-settings-container">
+                <div class="btn btn-app btn-mini btn-warning" id="ace-settings-btn">
+                    <i class="icon-cog"></i>
+                </div>
+                <div id="ace-settings-box">
+                    <div>
+                        <div class="pull-left">
+                            <select id="skin-colorpicker" class="hidden">
+                                <option data-class="default" value="#438EB9">#438EB9</option>
+                                <option data-class="skin-1" value="#222A2D">#222A2D</option>
+                                <option data-class="skin-2" value="#C6487E">#C6487E</option>
+                                <option data-class="skin-3" value="#D0D0D0">#D0D0D0</option>
+                            </select>
+                        </div>
+                        <span>&nbsp; 选择皮肤</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ace-checkbox-2" id="ace-settings-header" /><label class="lbl" for="ace-settings-header">  锁定表头</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ace-checkbox-2" id="ace-settings-sidebar" /><label class="lbl" for="ace-settings-sidebar"> 锁定菜单</label>
+                    </div>
+                </div>
+            </div>
+            <!--/#ace-settings-container-->
+        </div>
+        <!-- #main-content -->
+    </div>
+    <!--content-->
+    <div>
+    </div>
+
+    <!-- page specific inline scripts -->
+    <asp:ContentPlaceHolder ID="inlinescripts" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- page specific inline scripts -->
+</body>
+<iframe scrolling="no" width="0" height="0" visible="false" id="__exframe" src="javascript:false;"></iframe>
+<noscript><iframe src="javascript:false;"></iframe></noscript>
+</html>

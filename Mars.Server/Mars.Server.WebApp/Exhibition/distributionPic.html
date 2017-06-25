@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/swiper.css"/>
+	<script type="text/javascript" src="/js/plugin/jquery-1.9.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.6/js/swiper.min.js"></script>
+	<style type="text/css">
+		img{width:100%;margin:auto;}
+	</style>
+</head>
+<body style="background-color:white !important;">
+	<div class="swiper-container">
+		 <div class="swiper-wrapper">
+	        <!-- Slides -->
+	        <div class="swiper-slide" id="map_1">
+	        	<figure>
+	        		<img src="/images/11.png"/>
+	        	</figure>
+	        </div>
+	        <div class="swiper-slide"" id="map_2">
+	        	<figure>
+	        		<img src="/images/12.png"/>
+	        	</figure>
+	        </div>
+	        <div class="swiper-slide" id="map_3">
+	        	<figure>
+	        		<img src="/images/23.png"/>
+	        	</figure>
+	        </div>
+	        <div class="swiper-slide"" id="map_4">
+	        	<figure>
+	        		<img src="/images/45.png"/>
+	        	</figure>
+	        </div>
+	        <div class="swiper-slide"" id="map_5">
+	        	<figure>
+	        		<img src="/images/67.png"/>
+	        	</figure>
+	        </div>
+	        <div class="swiper-slide"" id="map_6">
+	        	<figure>
+	        		<img src="/images/8.png"/>
+	        	</figure>
+	        </div>
+	    </div>
+	</div>
+		 <script>
+		    $(document).ready(function () {
+		  	var get = $.getUrlParam('aid');
+		    var mySwiper = new Swiper ('.swiper-container', {
+		        direction:'horizontal',
+		    });
+		    mySwiper.slideTo(get, 2000, false);//切换到第一个slide，速度为1秒
+		    });
+    </script>
+</body>
+</html>

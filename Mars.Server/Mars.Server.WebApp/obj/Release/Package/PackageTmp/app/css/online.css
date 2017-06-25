@@ -1,0 +1,54 @@
+*{margin:0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style:none;}
+a{text-decoration:none;color:#fff;}
+a:hover {outline: none;}
+a:active{outline:none;}
+ ul li a{font-size: 14px;}
+ input{outline:none;}
+/* set image max width to 100% */
+img {width: 100%;height: auto; /* ie8 */}
+body{box-sizing:border-box;font-size:1.2rem;font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif}
+.bigBox{width:100%;height:auto;background:white url(http://7xkwie.com2.z0.glb.qiniucdn.com/20151225/fb387d04-288b-434f-8c06-56ca990b800f.jpg?imageView2/0/interlace/1/format/jpg) no-repeat;border-box:box-sizing;}
+.wrap{width:80%;margin:0 auto 0;padding-top:10%;position:relative;}
+.openBookLeft{float:left;width:30.88%;height:63.2rem;position:relative;}
+.iphoneBox{width:79%;}
+.openBookPicBox{width:71%;position:absolute;z-index:1;top:7.3%;left:5%;overflow:hidden;}
+/*.openBookPic{width:71%;}*/
+.bannerChange{position:relative;width:300%;}
+.openBookPic li {width:33.333%;float:left;}
+.openBookRight{width:65.332%;float:right;}
+.download{position:relative;}
+.downloadBtn{margin:5rem auto 6rem;width:70%;*margin:50px auto;margin:70px auto\9;}
+.iphone-btn{float:left;}
+.downloadBtn a{width:45%;display:inline-block;}
+.Ios{float:left;}
+.downloadBtn a input{width:100%;}
+.android{float:right;}
+.code{width:15%;float:right;}
+.company{display:none;}
+.footer{background-color:white;text-align:center;line-height:150%;font-size:1.4rem;*font-size:14px;padding: 1rem 0;}
+.footer p{color:#999;_text-align:center;}
+@media only screen and (min-width:200px) and (max-width:599px) {
+	.wrap{width:87%;}
+	.openBookLeft{display:none;}
+	.openBookRight{float:none;width:100%;}
+	.downloadBtn{width:100%;margin:6rem 0 2rem;padding-bottom:4rem;}
+	.downloadBtn a{width:48%;}
+	.code{display:none;}
+    .openBookCompany{display:none;}
+    .company{display:block;}
+}
+@media only screen and (min-width:600px) and (max-width:940px){
+    .wrap{width:87%;}
+	.openBookLeft{display:none;}
+    .downloadBtn{width:100%;margin:6rem 0 2rem;padding-bottom:4rem;}
+	.openBookRight{float:none;width:100%;}
+	.downloadBtn{width:100%;margin:6rem 0;}
+	.downloadBtn a{width:48%;}
+	.code{display:none;}
+  }
+@media only screen and (min-width:900px) and (max-width:1364px) {
+    .openBookPic {
+        top: 5%;
+    }
+}
+.leadPage{position:absolute;width:100%;height:100%;z-index:2;display:none;}   

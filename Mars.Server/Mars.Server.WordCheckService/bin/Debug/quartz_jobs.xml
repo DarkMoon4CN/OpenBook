@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains job definitions in schema version 2.0 format -->
+
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+
+  <schedule>
+
+    <!--WordCheckJob测试 任务配置-->
+    <job>
+      <name>WordCheckJob</name>
+      <group>MarsWordCheck</group>
+      <description>开卷日历-敏感词监测服务</description>
+      <job-type>Mars.Server.WordCheckService.WordCheckJob,Mars.Server.WordCheckService</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>WordCheckJobTrigger</name>
+        <group>MarsWordCheck</group>
+        <job-name>WordCheckJob</job-name>
+        <job-group>MarsWordCheck</job-group>
+        <start-time>2016-01-11T00:00:00+08:00</start-time>
+        <cron-expression>0 0/5 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+
+    <!--NewWordCheckAllInfoJob测试 任务配置-->
+    <job>
+      <name>NewWordCheckAllInfoJob</name>
+      <group>MarsWordCheck</group>
+      <description>开卷日历-敏感词监测服务</description>
+      <job-type>Mars.Server.WordCheckService.NewWordCheckAllInfoJob,Mars.Server.WordCheckService</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>NewWordCheckAllInfoJobTrigger</name>
+        <group>MarsWordCheck</group>
+        <job-name>NewWordCheckAllInfoJob</job-name>
+        <job-group>MarsWordCheck</job-group>
+        <start-time>2016-01-11T00:00:00+08:00</start-time>
+        <cron-expression>0 0 23 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </schedule>
+</job-scheduling-data>

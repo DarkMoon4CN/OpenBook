@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Common.master.cs" Inherits="Mars.Server.WebApp.Common" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>信息发布平台-<%=title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- basic styles -->
+    <OpenBook:OBScript runat="server" ID="bootstrap" Src="~/css/bootstrap.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="bootstrap_responsive" Src="~/css/bootstrap-responsive.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="font_awesome" Src="~/css/font-awesome.min.css" ScriptType="StyleCss" />
+    <!--[if IE 7]>
+    <OpenBook:OBScript runat="server" ID="font_awesome_ie7" Src="~/css/font-awesome-ie7.min.css" ScriptType="StyleCss"/>
+    <![endif]-->
+    <OpenBook:OBScript runat="server" ID="common" Src="~/css/common.css" ScriptType="StyleCss" />
+    <!-- basic styles -->
+
+    <!-- ace styles -->
+    <OpenBook:OBScript runat="server" ID="ace" Src="~/css/ace.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="ace_responsive" Src="~/css/ace-responsive.min.css" ScriptType="StyleCss" />
+    <OpenBook:OBScript runat="server" ID="ace_skins" Src="~/css/ace-skins.min.css" ScriptType="StyleCss" />
+    <!--[if lt IE 9]>
+    <OpenBook:OBScript runat="server" ID="ace_ie" Src="~/css/ace-ie.min.css" ScriptType="StyleCss"/>
+	<![endif]-->
+    <!-- ace styles -->
+    <!-- page specific plugin styles -->
+    <asp:ContentPlaceHolder ID="css" runat="server">
+    </asp:ContentPlaceHolder>
+
+      <!-- basic javascript -->
+    <OpenBook:OBScript runat="server" ID="jqueryjs" Src="~/js/plugin/jquery.min.js" ScriptType="Javascript" />
+    <script type="text/javascript">window.jQuery || document.write("<script src='js/plugin/jquery-1.9.1.min.js'>\x3C/script>");</script>
+    <OpenBook:OBScript runat="server" ID="bootstrapjs" Src="~/js/plugin/bootstrap.min.js" ScriptType="Javascript" />
+    <script type="text/javascript"> var _root = '<%= Mars.Server.Utils.WebMaster.WebRoot %>'; </script>
+    <OpenBook:OBScript runat="server" ID="common_js" Src="~/js/common.js" ScriptType="Javascript" />
+    <!-- basic javascript -->
+
+    <!-- ace scripts -->
+    <OpenBook:OBScript runat="server" ID="ace_elements_js" Src="~/js/plugin/ace-elements.min.js" ScriptType="Javascript" />
+    <OpenBook:OBScript runat="server" ID="ace_js" Src="~/js/plugin/ace.min.js" ScriptType="Javascript" />
+    <!-- ace scripts -->
+
+    <!-- smart scripts -->
+    <OpenBook:OBScript runat="server" ID="smartcore_js" Src="~/js/smartcore.js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery.pagination.js" runat="server" ID="pagination_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/jquery-jtemplates.js" runat="server" ID="jtemplates_js" ScriptType="Javascript" />
+    <OpenBook:OBScript Src="~/js/plugin/scrollpagination.js" runat="server" ID="scrollpagination_js" ScriptType="Javascript" />
+    <!-- smart scripts -->
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>   
+    <div>
+        <asp:ContentPlaceHolder ID="content" runat="server">        
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="inlinescripts" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>   
+</body>
+</html>

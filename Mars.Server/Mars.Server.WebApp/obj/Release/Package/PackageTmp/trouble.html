@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        img{width:100%;}
+        .pageWrong{width:50%;margin:3rem auto 0;}
+    </style>
+</head>
+<body style="background-color:#f5f5f5;position:relative;">
+    <div class="pageWrong">
+        <img src="images/wrong.png"/>
+    </div>
+    <script type="text/javascript" src="js/plugin/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jqueryextend.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.get("/handlers/LogController/LogTroublePageInfo.ashx", { "path": $.getUrlParam('aspxerrorpath'), "ts": new Date().getTime() }, function (data) { });
+        });
+    </script>
+</body>
+</html>

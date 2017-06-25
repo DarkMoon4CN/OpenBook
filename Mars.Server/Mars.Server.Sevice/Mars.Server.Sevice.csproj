@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC57054A-49A9-4CD7-9547-0D73D45FE7BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mars.Server.Sevice</RootNamespace>
+    <AssemblyName>Mars.Server.Sevice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLLs\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\..\DLLs\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AppBoxController.cs" />
+    <Compile Include="BaseHandler\ActionHandler.cs" />
+    <Compile Include="BaseHandler\BaseController.cs" />
+    <Compile Include="BaseHandler\CustomAttributeDefine.cs" />
+    <Compile Include="BaseHandler\Error404Handler.cs" />
+    <Compile Include="BaseHandler\HandlerReflector.cs" />
+    <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\ArticleController.cs" />
+    <Compile Include="Controller\CategoriesController.cs" />
+    <Compile Include="Controller\CommentController.cs" />
+    <Compile Include="Controller\CommonDictController.cs" />
+    <Compile Include="Controller\ExhibitionController.cs" />
+    <Compile Include="Controller\FestivalController.cs" />
+    <Compile Include="Controller\LogController.cs" />
+    <Compile Include="Controller\NewsController.cs" />
+    <Compile Include="Controller\NewYearController.cs" />
+    <Compile Include="Controller\ReplyController.cs" />
+    <Compile Include="Controller\RightController.cs" />
+    <Compile Include="Controller\SensitiveWordController.cs" />
+    <Compile Include="Controller\SignBookController.cs" />
+    <Compile Include="Controller\SMSController.cs" />
+    <Compile Include="Controller\StartPicController.cs" />
+    <Compile Include="Controller\TestController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="MarsHanderFactory.cs" />
+    <Compile Include="MarsTemplateHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mars.Server.BLL\Mars.Server.BLL.csproj">
+      <Project>{5a6434a2-93c3-441e-a0f7-c17c16f8d2bf}</Project>
+      <Name>Mars.Server.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Controls\Mars.Server.Controls.csproj">
+      <Project>{72b67784-b5fc-4661-8a68-45eb818b19f2}</Project>
+      <Name>Mars.Server.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Entity\Mars.Server.Entity.csproj">
+      <Project>{397a6b62-a8b1-4f7a-a292-a403c918b27f}</Project>
+      <Name>Mars.Server.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Utils\Mars.Server.Utils.csproj">
+      <Project>{03e6b776-ea5e-4f0a-b8c1-ce2d63873819}</Project>
+      <Name>Mars.Server.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

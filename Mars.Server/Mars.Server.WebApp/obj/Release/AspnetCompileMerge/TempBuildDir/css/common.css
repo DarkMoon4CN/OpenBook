@@ -1,0 +1,300 @@
+﻿#ph{ padding-top:6px; background-color:#f9fcff; border:solid 1px #dfe6ee; height:22px; margin-top:1px; padding-bottom:5px;}
+.pagination {
+            font-size: 80%;
+            float:right;
+        }
+        
+.pagination a {
+    text-decoration: none;
+	border: solid 1px #AAE;
+	color: #15B;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding: 0.3em 0.5em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+    margin-top:5px;
+    font:12px "宋体", Arial, Helvetica, sans-serif;
+}
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+	border: solid 1px #AAE;
+}
+
+.pagination .current.prev, .pagination .current.next{
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+
+/*treeview style start*/
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	background-color: white;
+	margin-top: 4px;
+}
+.treeview .hitarea {
+	background: url(../images/treeview-default.gif) -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: red; cursor: pointer; }
+
+.treeview li { background: url(../images/treeview-default-line.gif) 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+.treeview li.expandable a{font-size:12px; color:#678197; text-decoration:none;}
+.treeview li.expandable a:visited{color:#000;}
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(../images/treeview-default.gif); }  
+.treeview li.lastCollapsable { background-position: 0 -111px;}
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+
+.treeview input.ace-checkbox-2 {
+    opacity:1;
+    position:relative;
+    width:auto;
+    height:auto;
+    margin:0 0;
+}
+/*treeview style end*/
+
+
+/*用户信息样式*/
+.userinfotable {
+    width:800px;
+    border:1px solid red; 
+    margin:20px auto;
+}
+
+.userinfotable tr {
+    border:1px solid #ddd; 
+}
+
+.userinfotable td {
+    height:25px;
+    border:1px solid #ddd; 
+}
+
+.userinfotable .title {
+    background-color:aliceblue;
+    text-align:center;
+    font-weight:600;
+    width:70px;
+}
+
+.userinfotable .info {
+    text-indent:5px;
+    width:130px;
+}
+
+.userinfotable .info input[type='text']{
+    padding:0 0;
+    margin-bottom:inherit;
+    width:90%;
+    text-indent:5px;
+}
+
+
+.userinfotable .info input[type='radio']{
+    opacity:inherit;
+    position:inherit;
+    width:14px;
+    margin:0px 5px 0px 0px;
+    vertical-align:top;
+}
+
+.userinfotable .info input[type='checkbox']{
+    opacity:inherit;
+    position:inherit;
+    width:14px;
+    margin:0px 5px 0px 0px;
+    vertical-align:top;
+}
+
+
+.userinfotable .info textarea{
+    padding:0 0;
+    margin-bottom:inherit;
+    width:90%;
+    text-indent:5px;
+}
+.userinfotable .gender,.seluseridentity,.departmenttype {
+    padding:0 0;
+    margin-bottom:inherit;
+    width:90%;
+    height:23px;
+    text-indent:5px;
+}
+
+.selotherfield {
+    width:160px;
+    list-style-type:none;
+    height:25px;
+    float:left;
+}
+/*用户信息样式*/
+
+/*表格查询头*/
+.searchtable {
+    width:80%;
+}
+
+.searchtable tr {
+    
+}
+
+.searchtable td {
+    height:25px;
+}
+
+.searchtable .title {
+    text-align:right;
+    font-weight:600;
+    width:10%;
+}
+
+.searchtable .info {
+    text-indent:5px;
+    width:15%;
+}
+
+
+.searchtable .info input[type='text']{
+    padding:0 0;
+    margin-bottom:inherit;
+    width:90%;
+    text-indent:5px;
+}
+
+.searchtable .cusotmtype {
+    padding:0 0;
+    margin-bottom:inherit;
+    width:90%;
+    height:23px;
+    text-indent:5px;
+}
+/*表格查询头*/
+
+.sct_conent {
+    width: 282px;
+    padding-bottom: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #C7C7C7;
+    font: 12px/3px "宋体", Arial, Helvetica, sans-serif;
+}
+
+.treeview input[type='checkbox'] {
+    opacity:inherit;
+    position:inherit;
+    width:12px;
+    height:12px;
+}
+
+  ul.auth-kind {
+    overflow: hidden; 
+    height : auto !important; 
+    width: 282px;
+    border: 1px solid #C7C7C7;
+    cursor: text;
+    font-size: 12px;
+    font-family: Verdana;
+    min-height: 20px;
+    z-index: 999;
+    margin:0 0 5px 0px;
+    padding:0px 0px 5px 0px;
+    background-color: #fff;
+     list-style-type: none;
+}
+
+li.auth-kind {
+    overflow: hidden; 
+    height: auto !important; 
+    height: 1%;
+    margin: 3px;
+    padding: 1px 3px;
+    background-color: #eff2f7;
+    color: #000;
+    cursor: default;
+    border: 1px solid #ccd5e4;
+    font-size: 11px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    float: left;
+     line-height:15px;
+     white-space:nowrap;
+}
+
+li.auth-kind p {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+li.auth-kind p a {
+   color: #3764bc;
+}
+li.auth-kind p a:hover {
+   color: #3764bc;
+}
+li.auth-kind p a:visited {
+   color: #3764bc;
+}
+
+li.auth-kind span {
+    color: #a6b3cf;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li.auth-kind {
+    float: left;
+}
+
+ /*loading style DataLoading.gif */
+ .dataloading,.scrollingloading{ height:120px;background-size:20px;background-image:url(../images/common/loading_img.gif);background-repeat:no-repeat; background-position:50%;padding-top:20px; text-align:center; margin:0px auto;  width:300px;  padding-bottom:5px;}
+.scrollnodata{color:#999;margin-top:15px;}
+/*end*/
+
+/*window tip style*/
+.wintip{ position:absolute; top:41%;}
+.wintip div{ background-image:url(../images/common/wintip.gif); background-repeat:no-repeat; background-position:5% center; height:80px; padding-left:16px; padding-top:10px; text-align:center; margin:0px auto; border:solid 5px #3276b3; width:330px; background-color:#f9fcff; padding-bottom:10px;}
+/*window tip style*/
+body{font-size:14px !important;}

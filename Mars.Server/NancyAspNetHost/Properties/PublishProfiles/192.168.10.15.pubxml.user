@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>\\192.168.10.15\Mars.WebServer</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>02/02/2016 15:08:47</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>02/02/2016 15:08:47</publishTime>
+    </File>
+    <File Include="bin/CCPRestSDK.dll">
+      <publishTime>11/10/2015 13:21:53</publishTime>
+    </File>
+    <File Include="bin/CsvHelper.dll">
+      <publishTime>12/14/2015 10:23:15</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>12/14/2015 10:22:45</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>03/06/2013 07:13:51</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>07/27/2015 14:14:02</publishTime>
+    </File>
+    <File Include="bin/Log4Simple.dll">
+      <publishTime>12/23/2015 09:49:37</publishTime>
+    </File>
+    <File Include="bin/Mars.Server.BLL.dll">
+      <publishTime>02/02/2016 14:59:29</publishTime>
+    </File>
+    <File Include="bin/Mars.Server.DAO.dll">
+      <publishTime>02/02/2016 14:59:29</publishTime>
+    </File>
+    <File Include="bin/Mars.Server.Entity.dll">
+      <publishTime>02/02/2016 14:59:29</publishTime>
+    </File>
+    <File Include="bin/Mars.Server.Utils.dll">
+      <publishTime>02/02/2016 14:59:29</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>11/10/2015 16:08:08</publishTime>
+    </File>
+    <File Include="bin/Nancy.Hosting.Aspnet.dll">
+      <publishTime>11/10/2015 16:08:31</publishTime>
+    </File>
+    <File Include="bin/NancyAspNetHost.dll">
+      <publishTime>02/02/2016 15:08:45</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/10/2015 16:08:29</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>03/06/2013 07:17:44</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>03/06/2013 07:17:48</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>03/06/2013 07:17:47</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>03/06/2013 07:17:46</publishTime>
+    </File>
+    <File Include="bin/Qiniu.4.0.dll">
+      <publishTime>11/10/2015 13:21:53</publishTime>
+    </File>
+    <File Include="icon.png">
+      <publishTime>11/10/2015 13:21:53</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/10/2015 13:21:53</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/02/2016 15:08:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/15/2016 11:48:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

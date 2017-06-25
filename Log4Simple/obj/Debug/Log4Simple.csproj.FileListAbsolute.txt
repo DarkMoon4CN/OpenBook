@@ -1,0 +1,5 @@
+E:\Project\Mars\Code\Log4Simple\bin\Debug\Log4Simple.dll
+E:\Project\Mars\Code\Log4Simple\bin\Debug\Log4Simple.pdb
+E:\Project\Mars\Code\Log4Simple\obj\Debug\Log4Simple.dll
+E:\Project\Mars\Code\Log4Simple\obj\Debug\Log4Simple.pdb
+E:\Project\Mars\Code\Log4Simple\obj\Debug\Log4Simple.csprojResolveAssemblyReference.cache

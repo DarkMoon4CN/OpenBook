@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAF43AAA-6A84-4BCE-93BF-D7AFDA2EC8F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mars.Server.DAO</RootNamespace>
+    <AssemblyName>Mars.Server.DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleDAO.cs" />
+    <Compile Include="AuthDAO.cs" />
+    <Compile Include="CalendarTypeDAO.cs" />
+    <Compile Include="CategoriesDAO.cs" />
+    <Compile Include="Comments\CommentDAO.cs" />
+    <Compile Include="Comments\CommentSearchDAO.cs" />
+    <Compile Include="Comments\EventItemCommentSearchDAO.cs" />
+    <Compile Include="Comments\ReplySearchhDAO.cs" />
+    <Compile Include="Comments\SensitiveWordSearchDAO.cs" />
+    <Compile Include="CommonDAO.cs" />
+    <Compile Include="Dapper.cs" />
+    <Compile Include="DepartmentDAO.cs" />
+    <Compile Include="DialogMessagesDAO.cs" />
+    <Compile Include="EventItemBrowseCntDao.cs" />
+    <Compile Include="EventItemDAO.cs" />
+    <Compile Include="EventItemGroupDAO.cs" />
+    <Compile Include="ExhibitionEmailDAO.cs" />
+    <Compile Include="Exhibition\ActivityDAO.cs" />
+    <Compile Include="Exhibition\Console_ActivityDAO.cs" />
+    <Compile Include="Exhibition\ExhibitionDAO.cs" />
+    <Compile Include="Exhibition\ExhibitorDAO.cs" />
+    <Compile Include="Exhibition\SearchDAO.cs" />
+    <Compile Include="FestivalDAO.cs" />
+    <Compile Include="FunctionDAO.cs" />
+    <Compile Include="MobileMessageDAO.cs" />
+    <Compile Include="NewYear\CoupletDAO.cs" />
+    <Compile Include="PictureDAO.cs" />
+    <Compile Include="PictureServerDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignBookDAO.cs" />
+    <Compile Include="SignSMSModelDAO.cs" />
+    <Compile Include="SMSDAO.cs" />
+    <Compile Include="SubscriptionDAO.cs" />
+    <Compile Include="SysRoleDAO.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Systems\StartPicSearchDAO.cs" />
+    <Compile Include="Systems\WordCheckDAO.cs" />
+    <Compile Include="SysUserDAO.cs" />
+    <Compile Include="UserDAO.cs" />
+    <Compile Include="UserMailDAO.cs" />
+    <Compile Include="UserRemindDAO.cs" />
+    <Compile Include="Users\FeedbackSearchDAO.cs" />
+    <Compile Include="Users\RecommendDAO.cs" />
+    <Compile Include="Users\ReportSearchDAO.cs" />
+    <Compile Include="ZoneDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mars.Server.Entity\Mars.Server.Entity.csproj">
+      <Project>{397a6b62-a8b1-4f7a-a292-a403c918b27f}</Project>
+      <Name>Mars.Server.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mars.Server.Utils\Mars.Server.Utils.csproj">
+      <Project>{03e6b776-ea5e-4f0a-b8c1-ce2d63873819}</Project>
+      <Name>Mars.Server.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

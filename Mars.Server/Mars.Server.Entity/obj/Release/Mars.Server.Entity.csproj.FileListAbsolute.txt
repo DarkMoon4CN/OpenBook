@@ -1,0 +1,7 @@
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\bin\Release\Mars.Server.Entity.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\bin\Release\Mars.Server.Entity.pdb
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\bin\Release\Newtonsoft.Json.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\bin\Release\Newtonsoft.Json.xml
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\obj\Release\Mars.Server.Entity.dll
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\obj\Release\Mars.Server.Entity.pdb
+E:\Project\Mars\Code\Mars.Server\Mars.Server.Entity\obj\Release\Mars.Server.Entity.csprojResolveAssemblyReference.cache
